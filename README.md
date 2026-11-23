@@ -3,8 +3,6 @@
 把手机（或其他蓝牙音频源）的声音通过蓝牙实时送到这台电脑上播放。常驻通知区域，
 **没有主窗口**，所有操作都在任务栏右键菜单里完成。
 
-![SoundFlow 菜单](docs/screenshot-light.png)
-
 > 它只负责“接收”：电脑作为蓝牙音频接收端（A2DP Sink）接收手机送来的声音，
 > 不是把已配对的耳机切换成电脑的输出设备。
 
@@ -91,12 +89,6 @@ tools/IconGen.cs             生成多尺寸 ICO
   接收音频期间暂停自动刷新，只有点“刷新设备”才会主动重新枚举。
 - 无后台服务、不联网；唯一写入的配置是 `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`
   下的启动项（菜单里可随时取消）。
-
-## 已知问题
-
-部分机型/驱动上，Windows 的 A2DP Sink 栈会出现“播放几秒后手机端自动暂停”，连接本身仍然正常
-（详见上游 [issue #33](https://github.com/ysc3839/AudioPlaybackConnector/issues/33)，Windows 的
-Sink 只支持 SBC 编码）。可优先尝试更新蓝牙适配器驱动；需要时用菜单“刷新设备”或重新点击设备重连。
 
 ## 许可
 

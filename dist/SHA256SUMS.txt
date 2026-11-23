@@ -1,0 +1,2 @@
+ae2bb5ed296c1be589510e94bb917682ff1ef498ff26a2b800c79a1dbfccaf5b  SoundFlow-1.5.0-win64-portable.zip
+e2bdc1235f347f3fd182121fbd9bb691717f161d37a2d9b0ea9aafbb02a9b4a0  SoundFlow.exe

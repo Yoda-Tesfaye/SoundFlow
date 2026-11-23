@@ -1,0 +1,12 @@
+﻿# build artefacts
+*.pdb
+*.user
+*.suo
+.vs/
+obj/
+bin/
+/SoundFlow.exe
+/AudioPlaybackConnector.exe
+
+# release staging
+dist/*.tmp
